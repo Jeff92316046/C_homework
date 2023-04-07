@@ -2,24 +2,24 @@
 #include <stdlib.h> 
 #include <time.h>   
 
-
-int main(){
-    srand(time(NULL));
-    int arr[13] = {0};
-    float arr2[13] = {0};
-    int rd;
-    for(int i=0;i<36000;i++){
-        rd = 2 + (rand()%11);
-        arr[rd]++;
+int gcd(int x,int y){
+    if(y==0){
+        return x;
+    }else{
+        return gcd(y,x%y);
     }
-    for(int i=0;i<11;i++){
-        arr2[i+2] = (6-abs(5-i))/36;
-    }
-    for(int i=0;i<11;i++){
-        printf("%f",arr2[i]);
-    }
+}
+int lcm(int x,int y){
+    int gcd_num = gcd(x,y);
     
-                                                                                                           
+    return (x*y)/gcd_num;
+}
+int main(){
+    int x,y;
+    printf("Enter two integers :");
+    scanf("%d %d",&x,&y);
+
+    printf("%d",lcm(x,y));
 
     
 

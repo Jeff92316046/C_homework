@@ -23,7 +23,7 @@ int main(){
     }
     for(int i=0;i<11;i++){
         float temp = (a[i]/36000.0)*100;
-        printf("%3d %3d %3f%%\n",i+2,a[i],temp);
+        printf("%3d %7d %14f%%\n",i+2,a[i],temp);
     }
 
     
