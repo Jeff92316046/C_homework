@@ -37,8 +37,7 @@ int main(void)
 }
 
 // function to perform binary search of an array
-size_t binarySearch(const int b[], int searchKey, size_t low, size_t high)
-{
+size_t binarySearch(const int b[], int searchKey, size_t low, size_t high){
 
 
     
