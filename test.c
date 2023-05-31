@@ -1,5 +1,8 @@
 #include<stdio.h>
 
 int main(){
-    printf( "%4d",123456);
+   
+    int a=1000000000;
+    printf("%u\n",a);
+    
 }
